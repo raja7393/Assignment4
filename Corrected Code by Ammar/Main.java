@@ -3,7 +3,7 @@ import java.io.*;
 
 public class Main {
 	
-	System.out.printf("Player Should be above 18 yrs of age");
+	
 	public static void main(String[] args) throws Exception {
 		
 	   BufferedReader console = new BufferedReader(new InputStreamReader(System.in));
@@ -11,7 +11,7 @@ public class Main {
         Dice d1 = new Dice();
         Dice d2 = new Dice();
         Dice d3 = new Dice();
-
+	System.out.println("Player Should be above 18 yrs of age");
         Player player = new Player("Fred", 100);
         Game game = new Game(d1, d2, d3);
         List<DiceValue> cdv = game.getDiceValues();
