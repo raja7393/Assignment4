@@ -3,7 +3,6 @@ import java.io.*;
 
 public class Main {
 	
-	
 	public static void main(String[] args) throws Exception {
 		
 	   BufferedReader console = new BufferedReader(new InputStreamReader(System.in));
@@ -11,7 +10,7 @@ public class Main {
         Dice d1 = new Dice();
         Dice d2 = new Dice();
         Dice d3 = new Dice();
-	System.out.println("Player Should be above 18 yrs of age");
+
         Player player = new Player("Fred", 100);
         Game game = new Game(d1, d2, d3);
         List<DiceValue> cdv = game.getDiceValues();
@@ -31,7 +30,7 @@ public class Main {
             	int limit = 0;
                 player = new Player(name, balance);
                 player.setLimit(limit);
-                int bet = 0;
+                int bet = 5;
 
                 System.out.println(String.format("Start Game %d: ", i));
                 System.out.println(String.format("%s starts with balance %d, limit %d", 
